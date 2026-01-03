@@ -10,7 +10,7 @@ export default function Home() {
 
   const [message, setmessage] = useState("")
   const navigate = useRouter()
-  const [connected, isconnected] = useState(false)
+
 
 
 
@@ -45,6 +45,18 @@ export default function Home() {
 
 
           Enter the Chat Room
+        </button>
+
+        <button
+          className="p-2 m-2 bg-amber-500 text-white rounded"
+          onClick={() => {
+            setmessage("Chat Room Button Pressed ")
+            navigate.push('/biodata')
+
+          }}>
+
+
+          SRK Padhy
         </button>
 
         <div className="bg-gray-200 h-40 w-full p-2 m-2 text-black rounded ">
